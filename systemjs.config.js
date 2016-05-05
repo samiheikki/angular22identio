@@ -96,6 +96,7 @@
     '@angular/platform-browser',
     '@angular/platform-browser-dynamic',
     '@angular/router-deprecated',
+    '@angular/router',
     '@angular/testing',
     '@angular/upgrade',
   ];

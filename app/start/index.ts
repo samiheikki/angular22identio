@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import { Router, RouteParams } from '@angular/router-deprecated';
+import {Route, Routes, ROUTER_DIRECTIVES} from '@angular/router';
 
 @Component({
   templateUrl: 'app/start/template.html',
@@ -8,14 +8,14 @@ import { Router, RouteParams } from '@angular/router-deprecated';
 export class StartComponent implements OnInit {
   translation = {};
   constructor(
-    private _router: Router,
-    private _routeParams: RouteParams) {
+
+  ) {
   }
   ngOnInit() {
     console.log("a");
   }
   startTest() {
     //this._appService.setCurrentTask(1);
-    this._router.navigate(['FindWords', {id: 1} ]);
+    //this._router.navigate(['FindWords', {id: 1} ]);
   }
 }
